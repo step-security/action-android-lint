@@ -1,3 +1,4 @@
+# checkov:skip=CKV_GHA_7: Operational workflow with intentional workflow_dispatch inputs for cherry-pick management
 name: Auto Cherry-Pick from Upstream
 
 on:

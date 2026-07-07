@@ -1,6 +1,6 @@
-[![StepSecurity Maintained Action](https://raw.githubusercontent.com/step-security/maintained-actions-assets/main/assets/maintained-action-banner.png)](https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions)
-
 # GitHub Action for Android Lint
+
+[![StepSecurity Maintained Action](https://raw.githubusercontent.com/step-security/maintained-actions-assets/main/assets/maintained-action-banner.png)](https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions)
 
 ![CI](https://github.com/step-security/action-android-lint/actions/workflows/ci.yml/badge.svg)
 

@@ -1,3 +1,4 @@
+# checkov:skip=CKV_GHA_7: Operational workflow with intentional workflow_dispatch inputs for audit management
 name: NPM Audit Fix Run
 
 on:
