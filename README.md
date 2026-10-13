@@ -39,7 +39,7 @@ jobs:
           java-version: 21
           cache: gradle
       - run: ./gradlew lint
-      - uses: step-security/action-android-lint@v5
+      - uses: step-security/action-android-lint@v6
         with:
           report-path: build/reports/*.xml # Support glob patterns by https://www.npmjs.com/package/@actions/glob
           ignore-warnings: true # Ignore Lint Warnings

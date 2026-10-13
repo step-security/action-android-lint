@@ -43,7 +43,7 @@ jobs:
 
       - name: Lint Codebase
         id: super-linter
-        uses: step-security/super-linter/slim@7e1f2e8eb227a9549241219a10d3a48fcc2947f7 # v8.6.0
+        uses: step-security/super-linter/slim@155aa7598a1d087e3289c1c5a3212b55a3fee294 # v8.7.0
         env:
           DEFAULT_BRANCH: main
           FILTER_REGEX_EXCLUDE: dist/**/*
