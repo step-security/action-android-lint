@@ -1,0 +1,7 @@
+[[IgnoredVulns]]
+id = "GHSA-vfj7-8cjw-p6xm"
+reason = "Dev-only transitive dep via micromatch/jest; not bundled in dist/. No fix available upstream."
+
+[[IgnoredVulns]]
+id = "GHSA-hp3w-g68c-fv3c"
+reason = "Dev-only transitive dep via argparse/@istanbuljs (Istanbul coverage); not bundled in dist/. No fix available upstream."
