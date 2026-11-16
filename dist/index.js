@@ -56668,7 +56668,7 @@ function requireFollowRedirects () {
 	    }
 	  }
 	  // Ensure sensitive headers are always present
-	  if (!isArray(options.sensitiveHeaders)) {
+	  if (!Array.isArray(options.sensitiveHeaders)) {
 	    options.sensitiveHeaders = [];
 	  }
 
@@ -57046,10 +57046,6 @@ function requireFollowRedirects () {
 	  return dot > 0 && subdomain[dot] === "." && subdomain.endsWith(domain);
 	}
 
-	function isArray(value) {
-	  return value instanceof Array;
-	}
-
 	function isString(value) {
 	  return typeof value === "string" || value instanceof String;
 	}
@@ -57067,7 +57063,8 @@ function requireFollowRedirects () {
 	}
 
 	function escapeRegex(regex) {
-	  return regex.replace(/[[\]\\/()*+?.^$|]/g, "\\$&");
+	  // As per https://tc39.es/proposal-regexp-modifiers/#prod-SyntaxCharacter
+	  return regex.replace(/[\^$\\.*+?()[\]{}|]/g, "\\$&");
 	}
 
 	// Exports
